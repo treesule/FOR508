@@ -1,5 +1,8 @@
 
+what is the difference between service and process in windows  <br />
+A process is an instance of a particular executable (.exe program file) running  <br />
 
+A service is a process which runs in the background and does not interact with the desktop  <br />
 
 Examples:
 
