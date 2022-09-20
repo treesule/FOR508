@@ -14,4 +14,6 @@ Get-WMIObject -Namespace root\Subscription -Class __EventFilter <br />
 Get-WMIObject -Namespace root\Subscription -Class __FilterToConsumerBinding <br />
 Get-WMIObject -Namespace root\Subscription -Class __EventConsumer <br />
 
+ref: https://www.ired.team/offensive-security/persistence/t1084-abusing-windows-managent-instrumentation <br />
 
+The .MOF file was auto-compiled by the system to creat a wmic evet filer and consumer to immediately execute the task for example a script ot executable.
