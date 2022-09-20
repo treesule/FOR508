@@ -17,3 +17,5 @@ Get-WMIObject -Namespace root\Subscription -Class __EventConsumer <br />
 ref: https://www.ired.team/offensive-security/persistence/t1084-abusing-windows-managent-instrumentation <br />
 
 The .MOF file was auto-compiled by the system to creat a wmic evet filer and consumer to immediately execute the task for example a script ot executable.
+
+ForEach ($NameSpace in "root\subscription","root\default") { get-wmiobject -namespace $NameSpace -query "select * from __EventConsumer" }
