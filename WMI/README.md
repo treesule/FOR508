@@ -21,6 +21,10 @@ The .MOF file was auto-compiled by the system to creat a wmic evet filer and con
 ForEach ($NameSpace in "root\subscription","root\default") { get-wmiobject -namespace $NameSpace -query "select * from __EventConsumer" }
 
 
-**wmic PROCESS WHERE "NOT ExecutablePath LIKE '%Windows%'" GET ParentProcessId ProcessId Description ExecutablePath**
+**wmic PROCESS WHERE "NOT ExecutablePath LIKE '%Windows%'" GET  ParentProcessId,ProcessId,Description,ExecutablePath**
 
 **wmic /user:#{user_name} /password:#{password} /node:"#{node}" process call create #{process_to_execute}**
+**wmic /node:127.0.0.1 startup list full**
+**wmic /node:127.0.0.1 process get  ParentProcessId,ProcessId,Description,ExecutablePath**
+
+
