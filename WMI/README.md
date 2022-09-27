@@ -22,3 +22,5 @@ ForEach ($NameSpace in "root\subscription","root\default") { get-wmiobject -name
 
 
 **wmic PROCESS WHERE "NOT ExecutablePath LIKE '%Windows%'" GET ParentProcessId ProcessId Description ExecutablePath**
+
+**wmic /user:#{user_name} /password:#{password} /node:"#{node}" process call create #{process_to_execute}**
